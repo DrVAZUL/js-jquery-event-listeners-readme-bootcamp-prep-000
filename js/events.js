@@ -1,7 +1,18 @@
-//define functions here
+function getIt() {
+  $('p').on('click', function() {
+    alert("hey!")
+  })
+}
 
-$(document).ready(function(){
+function frameIt() {
+  $('img').on('load', function() {
+    $('img').addClass('tasty')
+  })
+}
 
-// call functions here
+$(document).ready(function() {
+
+getIt()
+frameIt()
 
 });
